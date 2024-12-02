@@ -4,13 +4,13 @@ cache_url = "https://julycrow.github.io/MyArxiv/cache.json"
 
 [[sources]]
 limit = 150
-category = "cs.CL"
-title = "map learning"
+category = "cs.CV"
+title = "hd map "
 
 [[sources]]
 limit = 150
 category = "cs.CV"
-title = "hd map "
+title = "map learning drive"
 
 
 [scripts]
