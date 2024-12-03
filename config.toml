@@ -1,6 +1,7 @@
 site_title = "MyArxiv"
 limit_days = 7
-cache_url = "https://julycrow.github.io/MyArxiv/cache.json"
+# cache_url = "https://julycrow.github.io/MyArxiv/cache.json"
+cache_url = "https://github.com/julycrow/MyArxiv/blob/gh-pages/cache.json"
 
 [[sources]]
 limit = 150
