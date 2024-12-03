@@ -38,3 +38,8 @@ let authors_rg = authors_array.reduce(|sum, v| sum + "|" + v, start);
 export title_rg;
 export authors_rg;
 export conferences_rg;
+
+// Function to check if an article should be highlighted
+fn isHighlighted(title, authors, conference) {
+    return title.match(title_rg) || authors.match(authors_rg) || conference.match(conferences_rg);
+}
