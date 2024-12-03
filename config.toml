@@ -4,7 +4,7 @@ limit_days = 7
 cache_url = "https://julycrow.github.io/MyArxiv/cache.json"
 
 [[sources]]
-limit = 1500
+limit = 200
 category = "cs.CV"
 title = "Computer Vision and Pattern Recognition"
 
