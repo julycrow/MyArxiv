@@ -12,6 +12,10 @@ limit = 150
 category = "cs.CV"
 title = "map learning drive"
 
+[[sources]]
+limit = 150
+category = "cs.CV"
+title = "Lane Segment"
 
 [scripts]
 highlight_title = "scripts/highlight_title.rhai"
