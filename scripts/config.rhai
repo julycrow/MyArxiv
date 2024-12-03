@@ -1,6 +1,6 @@
-let titles_type = ["Dataset", "Survey", "Review", "Overview", "Lane Segment"];
-let titles_model = ["BERT", "GPT", "Transformer"];
-let titles_method = ["Pre-train", "Pretrain", "Prompt", "Self-Supervised"];
+let titles_type = [];
+let titles_model = ["Lane Segment", "hd map", "map learning drive"];
+let titles_method = [];
 let titles =  titles_model + titles_method + titles_type;
 let authors_array = ["Yann LeCun", "Geoffrey Hinton", "Yoshua Bengio"];
 
