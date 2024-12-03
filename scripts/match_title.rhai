@@ -9,17 +9,3 @@ match_title = title_rg.is_match(title);
 match_title
 
 
-# if title != () {
-#     let conference = conferences_rg.find(comment);
-#     let conference = conference.text;
-
-#     let conference = if conference != "" {
-#         "<span class=\"chip\">" + conference + "</span>"
-#     } else {
-#         ""
-#     };
-
-#     conference
-# } else {
-#     ""
-# }
