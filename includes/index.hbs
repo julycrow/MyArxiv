@@ -23,6 +23,8 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             renderMathInElement(document.body, {
+                // customised options
+                // • auto-render specific keys, e.g.:
                 delimiters: [
                     {left: '$$', right: '$$', display: true},
                     {left: '$', right: '$', display: false},
@@ -34,6 +36,7 @@
                     {left: "\\begin{gather}", right: "\\end{gather}", display: true},
                     {left: "\\begin{CD}", right: "\\end{CD}", display: true},
                 ],
+                // • rendering keys, e.g.:
                 throwOnError: false
             });
         });
@@ -44,6 +47,11 @@
 <section class="header-container">
     <div style="display:flex; justify-content:space-between; align-items:flex-end;">
         <div>
+            {{!-- <a href="https://github.com/MLNLP-World/MyArxiv" style="text-decoration: none;">
+                <div class="header-title">
+                    <span class="header-title-preffix">MLNLP</span>//MyArxiv
+                </div>
+            </a> --}}
             <div class="header-title">
                 MyArxiv
             </div>
@@ -66,37 +74,35 @@
         {{#each subjects}}
             <article>
                 <details>
-                    <summary>
+                    <Summary>
                         {{ subject }} <span class="chip" style="font-size: 60%">{{len papers}}</span>
-                    </summary>
+                    </Summary>
                     <div class="details-content">
                         {{#each papers}}
-                            {{#if (highlight_title title authors)}}
-                                <article>
-                                    <details class="article-expander">
-                                        <summary class="article-expander-title">
-                                            {{#if (ne updated published)}}♻{{/if}} {{highlight_title title authors}} {{highlight_conference comment}}
-                                        </summary>
-                                        <div class="article-authors">
-                                            <a href="{{id}}">
-                                                <i class="ri-links-line"></i>
-                                            </a>
-                                            <a href="{{pdf_url}}">
-                                                <i class="ri-file-paper-2-line"></i>
-                                            </a>
-                                            {{highlight_author authors}}
-                                        </div>
+                            <article>
+                                <details class="article-expander">
+                                    <summary class="article-expander-title">
+                                        {{#if (ne updated published)}}♻{{/if}} {{highlight_title title authors}} {{highlight_conference comment}}
+                                    </summary>
+                                    <div class="article-authors">
+                                        <a href="{{id}}">
+                                            <i class="ri-links-line"></i>
+                                        </a>
+                                        <a href="{{pdf_url}}">
+                                            <i class="ri-file-paper-2-line"></i>
+                                        </a>
+                                        {{highlight_author authors}}
+                                    </div>
+                                    <div class="article-summary-box-inner">
+                                        <span>{{summary}}</span>
+                                    </div>
+                                    {{#if comment}}
                                         <div class="article-summary-box-inner">
-                                            <span>{{summary}}</span>
+                                            <span class="chip">comment</span>: <span>{{comment}}</span>
                                         </div>
-                                        {{#if comment}}
-                                            <div class="article-summary-box-inner">
-                                                <span class="chip">comment</span>: <span>{{comment}}</span>
-                                            </div>
-                                        {{/if}}
-                                    </details>
-                                </article>
-                            {{/if}}
+                                    {{/if}}
+                                </details>
+                            </article>
                         {{/each}}
                     </div>
                 </details>
@@ -110,6 +116,12 @@
 <footer>
     <div>
         <time id="build-timestamp" datetime="{{build_time}}">
+            {{!-- <a href="https://github.com/MLNLP-World/MyArxiv/actions">
+                <img id="build-timestamp-badge"
+                     src="https://img.shields.io/github/workflow/status/mlnlp-world/myarxiv/Update?label={{time_format
+                    build_time "%F %T %Z"}}&style=for-the-badge"
+                alt="{{time_format build_time "%F %T %Z"}}">
+            </a> --}}
             {{time_format build_time "%F %T %Z"}}
         </time>
     </div>
