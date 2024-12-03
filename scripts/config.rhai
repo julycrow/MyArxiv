@@ -40,6 +40,6 @@ export authors_rg;
 export conferences_rg;
 
 // Function to check if an article should be highlighted
-fn isHighlighted(title, authors, conference) {
-    return title.match(title_rg) || authors.match(authors_rg) || conference.match(conferences_rg);
-}
+//fn isHighlighted(title, authors, conference) {
+//    return title.match(title_rg) || authors.match(authors_rg) || conference.match(conferences_rg);
+//}
