@@ -6,17 +6,22 @@ cache_url = "https://github.com/julycrow/MyArxiv/blob/gh-pages/cache.json"
 [[sources]]
 limit = 150
 category = "cs.CV"
-title = "hd map "
+title = "Computer Vision and Pattern Recognition"
 
-[[sources]]
-limit = 150
-category = "cs.CV"
-title = "map learning drive"
+# [[sources]]
+# limit = 150
+# category = "cs.CV"
+# title = "hd map "
 
-[[sources]]
-limit = 150
-category = "cs.CV"
-title = "Lane Segment"
+# [[sources]]
+# limit = 150
+# category = "cs.CV"
+# title = "map learning drive"
+
+# [[sources]]
+# limit = 150
+# category = "cs.CV"
+# title = "Lane Segment"
 
 [scripts]
 highlight_title = "scripts/highlight_title.rhai"
