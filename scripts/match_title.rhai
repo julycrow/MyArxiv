@@ -5,7 +5,7 @@ let title = params[0];
  
 title.trim();
 let title_rg = RegexCaseInsensitive(`(?P<key>(${cfg::title_rg}))`);
-match_title = title_rg.is_match(title);
+let match_title = title_rg.is_match(title);
 match_title
 
 
