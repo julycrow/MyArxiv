@@ -4,7 +4,7 @@ limit_days = 7
 cache_url = "https://github.com/julycrow/MyArxiv/blob/gh-pages/cache.json"
 
 [[sources]]
-limit = 150
+limit = 1500
 category = "cs.CV"
 title = "Computer Vision and Pattern Recognition"
 
