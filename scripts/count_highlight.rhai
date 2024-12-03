@@ -1,6 +1,6 @@
 import "scripts/config" as cfg;
 
-let paper = params[0];
+let papers = params[0];
 let count_highlight = 0;
  
 let title_rg = RegexCaseInsensitive(`(?P<key>(${cfg::title_rg}))`);
